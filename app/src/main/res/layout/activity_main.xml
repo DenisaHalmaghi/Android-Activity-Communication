@@ -19,8 +19,34 @@
         android:id="@+id/lifecycleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="95dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="185dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/syncButton"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="479dp"
+        android:text="Sync"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/syncTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lifecycleTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
